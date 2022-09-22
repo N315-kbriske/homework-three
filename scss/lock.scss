@@ -1,0 +1,90 @@
+.infoContain {
+  height: 50px;
+  background-color: rgb(58, 58, 60);
+
+  display: flex;
+  align-items: center;
+
+  .info {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    // border: 2px solid red;
+
+    a {
+      text-decoration: none;
+      color: lightgray;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: lighter;
+    }
+  }
+}
+
+.lock-hero {
+  max-width: 100%;
+  height: 500px;
+  background-image: url("../images/LevelTouch4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .lock-banner {
+    color: white;
+    font-size: 100px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
+.references {
+  width: 100%;
+  height: 250px;
+  background: rgb(36, 36, 38);
+  // border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .reference-container {
+    width: 350px;
+    // border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+
+    .ref {
+      color: white;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .refText {
+      color: rgb(205, 205, 205);
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 19px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .references {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .reference-container {
+    }
+  }
+}
